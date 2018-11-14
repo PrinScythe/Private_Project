@@ -9,11 +9,8 @@ import state.BilleState;
 
 public class Piloted extends DecoratorBilleAcceleration {
 	
-	BilleState state;
-
-    public Piloted(Bille bille, BilleState billeState) {
+    public Piloted(Bille bille) {
         super(bille);
-        this.state = billeState;
     }
 
     /*public Piloted(Bille bille, CadreObserverObservable cadre) {

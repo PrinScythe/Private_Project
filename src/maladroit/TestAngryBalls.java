@@ -68,7 +68,7 @@ public class TestAngryBalls {
 		yellowBille  = new Friction(yellowBille);
 		yellowBille  = new CollisionBounce(yellowBille);
 		
-		Bille greenBille = new SimpleBille(p2, rayon/3, v2, Color.green);
+		Bille greenBille = new SimpleBille(p2, rayon, v2, Color.green);
 		greenBille = new MovementNewton(greenBille);
 		greenBille = new Friction(greenBille);
 		//greenBille = new CollisionBounce(greenBille);
@@ -77,7 +77,7 @@ public class TestAngryBalls {
 		cyanBille = new MovementRectilinearUniform(cyanBille);
 		cyanBille = new CollisionThroughWalls(cyanBille);
 
-		Bille blackBille = new SimpleBille(p4, rayon/2, v4, Color.black);
+		Bille blackBille = new SimpleBille(p4, rayon, v4, Color.black);
 		blackBille = new MovementNewton(blackBille);
 		//blackBille = new CollisionStop(blackBille);
 		//blackBille = new CollisionBounce(blackBille);
@@ -90,23 +90,23 @@ public class TestAngryBalls {
 		Bille orangeBille = new SimpleBille(p5, rayon, v5, Color.orange);
 		orangeBille = new Friction(orangeBille);
 		orangeBille = new CollisionBounce(orangeBille);
-		orangeBille = new Piloted(orangeBille, etatBille);
+		orangeBille = new Piloted(orangeBille);
 		
-		Bille roseBille = new SimpleBille(p4, rayon, new Vecteur(Vecteur.VECTEURNUL), Color.pink);
+		Bille roseBille = new SimpleBille(p4, rayon*3, new Vecteur(Vecteur.VECTEURNUL), Color.pink);
 		roseBille = new CollisionBounce(roseBille);
 		roseBille = new Friction(roseBille);
-		roseBille = new Piloted(roseBille, etatBille);
+		roseBille = new Piloted(roseBille);
 		
 		
         // Adding them
 
         //billes.add(redBille);
         //billes.add(yellowBille);
-        //billes.add(greenBille);
+        billes.add(greenBille);
         //billes.add(cyanBille);
-        //billes.add(blackBille);
+        billes.add(blackBille);
         billes.add(orangeBille);
-		billes.add(roseBille);
+		//billes.add(roseBille);
 		
 	}
 

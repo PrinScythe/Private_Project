@@ -12,7 +12,7 @@ import state.BilleState;
 
 public class ControllerMove extends Controller {
     
-    private static double COEFFICIENT = 1;
+    private static double COEFFICIENT = 5;
     
     private Vecteur vecteurAcceleration;
 
@@ -37,8 +37,6 @@ public class ControllerMove extends Controller {
 		state.setLastPositionMouse(new Vecteur(courant));
 		
 		state.getBilleFocus().getAccélération().ajoute(delta);
-
-		vecteurAcceleration = delta;
 	}
 	
 	@Override
