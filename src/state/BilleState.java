@@ -61,10 +61,6 @@ public class BilleState implements MouseListener, MouseMotionListener {
 		this.controllerCourant = controllerCourant;
 	}
 
-	public Vecteur acceleration() {
-		return this.controllerCourant.acceleration();
-	}
-
 	public Vector<Bille> getBilles() {
 		return billes;
 	}

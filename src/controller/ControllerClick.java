@@ -12,11 +12,6 @@ public class ControllerClick extends Controller {
     public ControllerClick(BilleState state, Controller suivant, Controller precedent) {
         super(state, suivant, precedent);
     }
-    
-    @Override
-    public Vecteur acceleration() {
-        return new Vecteur(Vecteur.VECTEURNUL);
-    }
 
 	
 	@Override

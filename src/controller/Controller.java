@@ -19,7 +19,6 @@ public abstract class Controller {
 		this.state = state;
 	}
 	
-	public abstract Vecteur acceleration();
 
 	public abstract void onTraineLaBille(int x, int y);
 	public abstract void onCliqueSurLaBille(int x, int y, boolean b);

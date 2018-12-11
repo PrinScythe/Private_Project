@@ -14,11 +14,9 @@ public class ControllerMove extends Controller {
     
     private static double COEFFICIENT = 5;
     
-    private Vecteur vecteurAcceleration;
 
     public ControllerMove(BilleState state, Controller suivant, Controller precedent) {
         super(state, suivant, precedent);
-        vecteurAcceleration = new Vecteur(Vecteur.VECTEURNUL);
     }
 
 	@Override
@@ -42,16 +40,9 @@ public class ControllerMove extends Controller {
 	@Override
 	public void onRelacheLaBille() {
 		//System.out.println("on relache");
-        vecteurAcceleration = new Vecteur(Vecteur.VECTEURNUL);
 		state.setControllerCourant(previous);
 	}
 	
-    @Override
-    public Vecteur acceleration() {
-    	//Vecteur res = new Vecteur(vecteurAcceleration);
-    	vecteurAcceleration = new Vecteur(Vecteur.VECTEURNUL);
-    	return vecteurAcceleration;
-    }
 
 	@Override
 	public String getNomEtat() {

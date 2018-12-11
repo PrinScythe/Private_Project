@@ -102,11 +102,11 @@ public class TestAngryBalls {
 
         //billes.add(redBille);
         //billes.add(yellowBille);
-        billes.add(greenBille);
+        //billes.add(greenBille);
         //billes.add(cyanBille);
-        billes.add(blackBille);
+        //billes.add(blackBille);
         billes.add(orangeBille);
-		//billes.add(roseBille);
+		billes.add(roseBille);
 		
 	}
 
